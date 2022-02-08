@@ -1,0 +1,93 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+    --cinza: #AAA;
+    --branca: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* box-sizing: border box (mantém o conteúdo das informações dentro de sua caixa.)*/
+body{
+    background-color: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branca);
+}
+.container{
+    margin-left: 10px;
+}
+header .container{
+    display: flex; /*coloca o conteúdo da div lado a lado.*/
+    align-items: center; /*coloca o conteúdo ao centro.*/
+    justify-content: space-between;
+} 
+header .container .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+header .container nav a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+header .container nav a:hover{
+    text-decoration: none;
+    color: var(--branca);
+} /*hover informa o que será feito quando passar o mouse no elemento*/
+main .filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+    height: 400px;
+    margin-bottom: 5px;
+    background-size: cover;   
+    display: flex;
+    flex-direction: column; /*coloca o conteúdo em coluna.*/
+    align-items: flex-start;
+    justify-content: center; /*coloca o conteúdo no centro da coluna.*/
+}
+main .filme-principal .container{
+    width: 90%;
+}
+main .filme-principal .container .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .filme-principal .container .descricao{
+    margin-bottom: 40px;
+}
+main .filme-principal .container .botoes .btn{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: var(--branca);
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all; /*coloca uma transição no efeito hover de 0.3 segundos*/
+}
+main .filme-principal .container .botoes .btn:hover{
+    background-color: var(--branca);
+    color: black;
+}
+main .filme-principal .container .botoes .btn i{
+    margin-right: 9px;
+    font-size: 15px;
+}
+main .filme-principal .container .botoes .btn a{
+    text-decoration: none;
+}
+#series, #filmes, #desenhos{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branca);
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
