@@ -1,15 +1,18 @@
 :root{
-    --vermelho: #e50914;
-    --preta: #141414;
+    --vermelho: #b1060f;
+    --preta: #1a1a1a;
     --cinza: #AAA;
     --branca: #fff;
 }
+/* acima estamos definindo variáveis a serem utilizada no css.*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* box-sizing: border box (mantém o conteúdo das informações dentro de sua caixa.)*/
+/* 
+O * antes destes bloco refere-se a um reset do css. Aplicaddo a todo o ducumento. Padronizando a presentação do site em todos os navegadores.
+box-sizing: border box (mantém o conteúdo das informações dentro de sua caixa.)*/
 body{
     background-color: var(--preta);
     font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +25,7 @@ header .container{
     display: flex; /*coloca o conteúdo da div lado a lado.*/
     align-items: center; /*coloca o conteúdo ao centro.*/
     justify-content: space-between;
-} 
+}
 header .container .logo{
     color: var(--vermelho);
     font-family: 'Arial Black';
@@ -66,7 +69,7 @@ main .filme-principal .container .botoes .btn{
     padding:15px 30px;
     margin-right: 15px;
     font-size: 12px;
-    cursor: pointer;
+    cursor: pointer; /*coloca a figura de mão quando o mouse está sobre o botão*/
     transition: .3s ease all; /*coloca uma transição no efeito hover de 0.3 segundos*/
 }
 main .filme-principal .container .botoes .btn:hover{
@@ -76,9 +79,6 @@ main .filme-principal .container .botoes .btn:hover{
 main .filme-principal .container .botoes .btn i{
     margin-right: 9px;
     font-size: 15px;
-}
-main .filme-principal .container .botoes .btn a{
-    text-decoration: none;
 }
 #series, #filmes, #desenhos{
     margin-left: 10px;
